@@ -16,7 +16,7 @@
         <!-- involucro diapositiva -->
         <div class="slider-wrapper">
             <!-- left arrow -->
-            <div class="prev">
+            <div class="prev" @click="prevPhoto"><!--Event @click-->
                 <i class="far fa-arrow-alt-circle-left"></i>
             </div>
             <!--  images -->
@@ -24,12 +24,13 @@
                 <img :src="photos[counterPhoto]">
             </div>
             <!-- right arrow -->
-            <div class="next">
+            <div class="next" @click="nextPhoto">
                 <i class="far fa-arrow-alt-circle-right"></i>
             </div>
             <!-- nav -->
             <div class="nav">
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle" v-for="(photo, index) in photos" :class="(index == counterPhoto) ? 'active' :null"></i>
+                <!--ternario = "(index == counterPhoto) ? 'active' :null"-->
             </div>
         </div>
     </div>

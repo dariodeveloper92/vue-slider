@@ -20,12 +20,12 @@ const app = new Vue(
         methods: {
             prevPhoto() {   // Foto precedente
                 this.counterPhoto -= 1;
-                if(this.counterPhoto < 0) this.counterPhoto = (this.photos.lenght - 1);
+                if(this.counterPhoto < 0) this.counterPhoto = (this.photos.length - 1);
             },
             nextPhoto() {   // Foto successiva
                 this.counterPhoto += 1;
-                if(this.counterPhoto == (this.photos.lenght)) this.counterPhoto - 0;
-            }
+                if(this.counterPhoto == (this.photos.length)) this.counterPhoto = 0;
+            },
         }
 })
 

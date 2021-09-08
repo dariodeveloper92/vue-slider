@@ -17,6 +17,9 @@ const app = new Vue(
                 'img/image4.jpg',
             ]
         },
+        mounted() {     //setInterval - timer
+            //setInterval(this.counterPhoto.length(),100);
+        }, 
         methods: {
             prevPhoto() {   // Foto precedente
                 this.counterPhoto -= 1;

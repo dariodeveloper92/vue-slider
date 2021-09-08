@@ -42,19 +42,9 @@ body {
 
 /* Arrow --------------------------------*/
 .prev, .next {
-    font-size: 50px;
+    font-size: 40px;
     color: gray;
     cursor: pointer;
-}
-
-.prev {
-    position: absolute;
-    right: 1080px;
-}
-
-.next {
-    position: absolute;
-    left: 1080px;
 }
 /*  Fine Arrow ---------------------------*/
 

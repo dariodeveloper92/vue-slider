@@ -5,10 +5,70 @@
 }
 
 /* common ----------------------------------*/
-
+body {
+    font-family: 'Lato';
+}
 /* fine common -----------------------------*/
 
+/* container  ------------------------------*/
+.container {
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    background: chocolate;
+}
 
-/* main  ----------------------------------*/
+.slider-wrapper {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background: chartreuse;
+}
 
-/* fine main  -----------------------------*/
+.slider-wrapper .images {
+    height: 100%;
+    text-align: center;
+}
+
+.slider-wrapper .images img {
+    width: 100%;
+    height: 100%;
+}
+/* fine container  -----------------------*/
+
+/* Arrow --------------------------------*/
+.prev, .next {
+    font-size: 50px;
+    color: gray;
+    cursor: pointer;
+}
+/*  Fine Arrow ---------------------------*/
+
+/* Down Bar -------------------------------*/
+.nav {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+/* Fine Down Bar -------------------------*/
+
+/* Circle --------------------------------*/
+.nav > i {
+    margin: 0 20px;
+}
+/* Fine Circle --------------------------*/
+
+/* Blue Circle Activated ----------------*/
+.nav > i.active {
+    color: blue;
+}
+/* Fine Blue Circle Activated -----------*/

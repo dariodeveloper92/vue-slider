@@ -18,7 +18,9 @@ const app = new Vue(
             ]
         },
         mounted() {     //setInterval - timer
-            //setInterval(this.counterPhoto.length(),100);
+            setInterval(  () => {
+                this.nextPhoto();
+            }, 3000);
         }, 
         methods: {
             prevPhoto() {   // Foto precedente
